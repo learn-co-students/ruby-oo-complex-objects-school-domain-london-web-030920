@@ -20,6 +20,6 @@ class School
         @roster[year_group]
     end
     def sort
-     @roster.each{|key, value| key = value.sort!}
+     @roster.select{|key, value| key = value.sort!}
         end
 end
